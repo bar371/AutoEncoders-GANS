@@ -79,7 +79,7 @@ opt = tf.train.AdamOptimizer(learning_rate).minimize(cost)
 #         ax.get_yaxis().set_visible(False)
 # plt.show()
 sess = tf.Session()
-epochs = 20
+epochs = 3
 batch_size = 10
 # Set's how much noise we're adding to the MNIST images
 noise_factor = 0.5
@@ -116,3 +116,4 @@ for images, row in zip([noisy_imgs, reconstructed], axes):
         ax.get_yaxis().set_visible(False)
 
 fig.tight_layout(pad=0.1)
+plt.show()
